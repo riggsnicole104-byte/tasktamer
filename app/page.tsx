@@ -14,13 +14,16 @@ export default function Page() {
             <span className="font-bold text-xl">TaskTamer</span>
             <span className="text-sm text-slate-500 ml-2">All-In-One Life Management</span>
           </div>
-          <nav className="hidden md:flex items-center gap-6 text-sm">
-            <a href="#services" className="hover:text-slate-700">Services</a>
-            <a href="#packages" className="hover:text-slate-700">Packages</a>
-            <a href="#process" className="hover:text-slate-700">How it Works</a>
-            <a href="#about" className="hover:text-slate-700">About</a>
-            <a href="#contact" className="hover:text-slate-700">Contact</a>
-          </nav>
+         <nav className="hidden md:flex items-center gap-6 text-sm">
+  <a href="/services" className="hover:text-slate-700">Services</a>
+  <a href="/packages" className="hover:text-slate-700">Packages</a>
+  <a href="/process" className="hover:text-slate-700">How it Works</a>
+  <a href="/about" className="hover:text-slate-700">About</a>
+  <a href="/reviews" className="hover:text-slate-700">Reviews</a>
+  <a href="/contact" className="hover:text-slate-700">Contact</a>
+</nav>
+
+
         </div>
       </header>
 
@@ -133,12 +136,24 @@ export default function Page() {
           </form>
         </div>
       </section>
+<footer className="py-10 bg-slate-50 border-t">
+  <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
+    <p className="text-sm text-slate-600">
+      © {new Date().getFullYear()} TaskTamer. All rights reserved.
+    </p>
 
-      <footer className="py-10 bg-slate-50 border-t">
-        <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
-          <p className="text-sm text-slate-600">© {new Date().getFullYear()} TaskTamer. All rights reserved.</p>
-        </div>
-      </footer>
+    <p className="text-sm">
+      Contact:
+      <a 
+        href="mailto:tasktamerhelp@gmail.com" 
+        className="text-pink-600 hover:underline ml-1"
+      >
+        tasktamerhelp@gmail.com
+      </a>
+    </p>
+  </div>
+</footer>
+
     </div>
   );
 }
